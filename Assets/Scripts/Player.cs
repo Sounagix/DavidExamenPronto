@@ -2,138 +2,155 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
+    //teclas
+    [Header("Teclas")]
     [SerializeField]
-    private KeyCode movDer;
+    private KeyCode left;
 
     [SerializeField]
-    private KeyCode movIzq;
+    private KeyCode rigth;
 
     [SerializeField]
-    private KeyCode salto;
+    private KeyCode jump;
 
     [SerializeField]
-    private KeyCode movAbajo;
+    private KeyCode attack;
 
-    [SerializeField]
+    [Header("Movimiento")]
+    [SerializeField] [Tooltip("Velocidad del jugador")] [Min(2.0f)]
     private float moveSpeed;
-
-    [SerializeField]
-    private float maxSpeed;
 
     [SerializeField]
     private float jumpSpeed;
 
-    private Rigidbody2D rb2D;
+    [SerializeField]
+    private int totalNumCoins;
 
-    private bool eNELSuelo = false;
+    private int currNumCoins = 0;
+
+    private Rigidbody2D rb;
+
+    private Animator animator;
+
+    private SpriteRenderer spriteRenderer;
+
+    private Sounds sounds;
+
+    private Life life;
+
+    private Vector2 initPos;
+
+    [SerializeField]
+    private GameObject prefabBala;
+
+    [SerializeField]
+    private float balaVelocidad;
 
 
 
-    // Awake -> getcmp, poner x valor a una variable
     private void Awake()
     {
-        rb2D = gameObject.GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        life = GetComponent<Life>();
+        sounds = GetComponent<Sounds>();
     }
 
-    // Start ->
     private void Start()
     {
-        
+        initPos = transform.position;
     }
-
 
     private void Update()
     {
         if (Input.anyKey)
         {
-            if (Input.GetKey(movDer))
+            if (Input.GetKey(rigth))
             {
-                MovePlayer(Vector2.right);
+                Move(Vector2.right); // 1,0
+                spriteRenderer.flipX = false;
             }
-            else if (Input.GetKey(movIzq))
+            else if (Input.GetKey(left))
             {
-                MovePlayer(Vector2.left);
+                Move(Vector2.left);
+                spriteRenderer.flipX = true;
             }
-            else if (Input.GetKeyDown(salto))
+            else if (Input.GetKeyDown(jump) && CanJump()) 
             {
-                MovePlayer(Vector2.up);
+                Jump();
             }
-            else if (Input.GetKey(movAbajo))
+            else if (Input.GetKeyDown(attack))
             {
-                MovePlayer(Vector2.down);
+                Attack();
             }
         }
     }
 
-
-    private void MovePlayer(Vector2 dir)
+    public void AddCoin()
     {
-        if (eNELSuelo && dir.Equals(Vector2.up))
+        currNumCoins++;
+        if(currNumCoins >= totalNumCoins)
         {
-            rb2D.AddForce(dir * jumpSpeed, ForceMode2D.Impulse);
-        }
-        else if (rb2D.velocity.magnitude < maxSpeed && !dir.Equals(Vector2.up))
-        {
-            if (dir.Equals(Vector2.up))
-            {
-                rb2D.AddForce(dir * jumpSpeed, ForceMode2D.Impulse);
-            }
-            else
-            {
-                rb2D.AddForce(dir * moveSpeed, ForceMode2D.Impulse);
-            }
+            sounds.PlaySound(SOUND.WIN);
+            GameManager.instance.WinPanel();
         }
     }
 
-
-    //private bool CanJump()
-    //{
-    //    // donde guardo la informacion de lo que alcanza el rayo
-        
-    //    Vector2 dir = -transform.up;
-    //    float distance = 3.0f;
-    //    int layer = (1 << 7);
-
-    //    RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, distance, layer);
-
-    //    if (hit != null && hit.collider.CompareTag("Suelo"))
-    //    {
-    //        return true;
-    //    }
-    //    else
-    //    {
-    //        return false;
-    //    }
-    //}
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Move(Vector2 dir)
     {
-        if (collision.gameObject.CompareTag("Suelo"))
-        {
-            eNELSuelo = true;
-        }
+        rb.AddForce(dir * moveSpeed);
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void Jump()
     {
-        if (collision.gameObject.CompareTag("Suelo"))
-        {
-            eNELSuelo = false;
-        }
+        sounds.PlaySound(SOUND.JUMP);
+        animator.SetBool("Jump", true);
+        rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
     }
 
-
+    private bool CanJump()
+    {
+        int layer = (1 << 7);
+        Debug.DrawRay(transform.position, -transform.up * 1.5f, Color.red, 1.0f);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, -transform.up, 1.5f, layer);
+        if (hit.collider != null && hit.collider.CompareTag("Plataforma"))
+        {
+            return true;
+        }
+        else return false;
+    }
 
     private void FixedUpdate()
     {
-        
+        animator.SetFloat("WalkSpeed", Mathf.Abs(rb.velocity.x));
+        if (animator.GetBool("Jump") && rb.velocity.y == 0)
+        {
+            animator.SetBool("Jump", false);
+        }
+        else if (rb.velocity.y != 0)
+        {
+            animator.SetBool("Jump", true);
+        }
     }
 
-    private void LateUpdate()
+    private void Attack()
     {
-        
+        animator.SetTrigger("Attack");
+    }
+
+    private void ResetPlayer()
+    {
+        rb.velocity = Vector2.zero;
+        transform.position = initPos;
+        life.LostLife();
+    }
+
+    private void OnBecameInvisible()
+    {
+        sounds.PlaySound(SOUND.HURT);
+        ResetPlayer();
     }
 }
