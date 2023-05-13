@@ -7,6 +7,7 @@ TagManager:
   - Suelo
   - Plataforma
   - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Front
+    uniqueID: 2488854069
     locked: 0

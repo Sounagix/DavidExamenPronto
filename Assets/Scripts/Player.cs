@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
     private KeyCode jump;
 
     [SerializeField]
+    private KeyCode topMov;
+
+    [SerializeField]
     private KeyCode attack;
 
     [Header("Movimiento")]
@@ -24,6 +27,12 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private float jumpSpeed;
+    
+    [SerializeField]
+    private float topSpeed;
+
+    [SerializeField]
+    private float topMaxSpeed;
 
     [SerializeField]
     private int totalNumCoins;
@@ -48,6 +57,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float balaVelocidad;
 
+    //  Si el player está situado en una escalera
+    private bool EnPosicionEscaleras;
+
 
 
     private void Awake()
@@ -64,6 +76,11 @@ public class Player : MonoBehaviour
         initPos = transform.position;
     }
 
+    public void JugadorEnEscalera(bool status)
+    {
+        EnPosicionEscaleras = status;
+    }
+
     private void Update()
     {
         if (Input.anyKey)
@@ -77,6 +94,10 @@ public class Player : MonoBehaviour
             {
                 Move(Vector2.left);
                 spriteRenderer.flipX = true;
+            }
+            else if (Input.GetKey(topMov) && EnPosicionEscaleras)
+            {
+                MoveToTop();
             }
             else if (Input.GetKeyDown(jump) && CanJump()) 
             {
@@ -102,6 +123,14 @@ public class Player : MonoBehaviour
     private void Move(Vector2 dir)
     {
         rb.AddForce(dir * moveSpeed);
+    }
+
+    private void MoveToTop()
+    {
+        if (rb.velocity.magnitude < topMaxSpeed)
+        {
+            rb.AddForce(Vector2.up * topSpeed);
+        }
     }
 
     private void Jump()
@@ -141,7 +170,7 @@ public class Player : MonoBehaviour
         animator.SetTrigger("Attack");
     }
 
-    private void ResetPlayer()
+    public void ResetPlayer()
     {
         rb.velocity = Vector2.zero;
         transform.position = initPos;

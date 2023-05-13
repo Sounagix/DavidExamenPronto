@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void LosePanel()
+    public void LosePanel() 
     {
         var cv = GameObject.Find("Canvas");
         if (cv != null)

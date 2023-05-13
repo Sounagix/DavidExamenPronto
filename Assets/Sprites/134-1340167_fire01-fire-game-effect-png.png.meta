@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: 314bc08600af5f24cbaafc92bbb07ef6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 768
+        width: 72
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d42fdf890b5e05449120cc16cc03d76
+      internalID: 1260546591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 768
+        width: 74
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394de342110d34a4294aa5128d1b817c
+      internalID: -355525164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_5
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 768
+        width: 76
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa1394f02960c742ab68841d9e97931
+      internalID: 1563974931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 78
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61614845ae797044a6ca98987054283
+      internalID: 672462422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_8
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 768
+        width: 72
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28f5c7b8bd99dd46a7fe5fb834a2ed5
+      internalID: 1359318119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_10
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 768
+        width: 74
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45c60b721424f94a8c3ad7cfdbc2f95
+      internalID: -131843768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_11
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 768
+        width: 76
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22301dce6f21d604bb77ad501fb57543
+      internalID: 1045529418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_12
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 768
+        width: 70
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d73fdfc319f2340849b71a7ce516bc
+      internalID: 1125500347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 512
+        width: 78
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7793b747c3dd4542b09a8ea5ae40c37
+      internalID: -130366719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 512
+        width: 81
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a51cf0e0f655d4ebe1f8334b8c6c80
+      internalID: -88771392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 512
+        width: 85
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232ec13a7f0a2764796d7826f04a8886
+      internalID: -378290439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_16
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 512
+        width: 81
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28fe74a1725b9748ac6f741ff60603c
+      internalID: 117741263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_17
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 512
+        width: 73
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd319f4bf5afc244a4a454d33a53b7c
+      internalID: -717121584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_18
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 512
+        width: 73
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825037ff96d459d4e8e0fe580b2f80b7
+      internalID: 446940343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_19
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 512
+        width: 73
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059f4b56c1fe3c847a4342d3ec9eb072
+      internalID: 1015582385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_20
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 512
+        width: 77
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d197afc348b41f43b631ffdd3f6d8d3
+      internalID: -1885306844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_21
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 256
+        width: 81
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f554fe81438fe4a851d86b79070ad9
+      internalID: -487030999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_22
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 256
+        width: 77
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77050ceb84ca64149abfeee12d8345dc
+      internalID: 731126948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 256
+        width: 80
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7af57cb90b2ec74f858f85d888b6b47
+      internalID: 1781574964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_27
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 76
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62560fa76eb05343a76e48ca184cfc8
+      internalID: 443376497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_28
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 256
+        width: 77
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc47106b63dfae4a844f1ef097afe3a
+      internalID: -723669210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_30
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 256
+        width: 83
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe514d92c4d04444820ac0b95f9e76d
+      internalID: -1033505603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_31
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 256
+        width: 80
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fe034d538e72942a07e94319bbde93
+      internalID: -1290502670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_32
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 256
+        width: 79
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d653d2e3af6dc6d41a694e5c8d4ac496
+      internalID: 918942758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_36
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 79
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13f883b62e0d1249a7bf500b75ed1a3
+      internalID: -402493548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_37
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 67
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b63b3ab97b92e447a310d0098c60e75
+      internalID: 284827006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_41
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 0
+        width: 75
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1829c01ff0b4da8469b10e2580a0933f
+      internalID: 2020506132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_42
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 0
+        width: 72
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1301d1096180684cb29fb920679f09f
+      internalID: 1826539094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_43
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 65
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c852d4611088a47859500c5bfa0ddd
+      internalID: 439683728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_44
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 67
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8825388b8c3aaea4cbff8ff846e05a92
+      internalID: -145955832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_45
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1
+        width: 71
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d775cf631c1e9e74e9f5fbb532fdc3ae
+      internalID: 429900109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_46
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 73
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1c456174d2c2c46ac54427dd3a9b41
+      internalID: 1942924083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 134-1340167_fire01-fire-game-effect-png_47
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 143
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c55c4eb9797d84fbd4df628532cb94
+      internalID: 640952530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      134-1340167_fire01-fire-game-effect-png_0: 1468883225
+      134-1340167_fire01-fire-game-effect-png_1: -524330635
+      134-1340167_fire01-fire-game-effect-png_10: -131843768
+      134-1340167_fire01-fire-game-effect-png_11: 1045529418
+      134-1340167_fire01-fire-game-effect-png_12: 1125500347
+      134-1340167_fire01-fire-game-effect-png_13: -130366719
+      134-1340167_fire01-fire-game-effect-png_14: -88771392
+      134-1340167_fire01-fire-game-effect-png_15: -378290439
+      134-1340167_fire01-fire-game-effect-png_16: 117741263
+      134-1340167_fire01-fire-game-effect-png_17: -717121584
+      134-1340167_fire01-fire-game-effect-png_18: 446940343
+      134-1340167_fire01-fire-game-effect-png_19: 1015582385
+      134-1340167_fire01-fire-game-effect-png_2: -1464009177
+      134-1340167_fire01-fire-game-effect-png_20: -1885306844
+      134-1340167_fire01-fire-game-effect-png_21: -487030999
+      134-1340167_fire01-fire-game-effect-png_22: 731126948
+      134-1340167_fire01-fire-game-effect-png_23: -1872024242
+      134-1340167_fire01-fire-game-effect-png_24: -2082136684
+      134-1340167_fire01-fire-game-effect-png_25: -273929023
+      134-1340167_fire01-fire-game-effect-png_26: 1781574964
+      134-1340167_fire01-fire-game-effect-png_27: 443376497
+      134-1340167_fire01-fire-game-effect-png_28: -723669210
+      134-1340167_fire01-fire-game-effect-png_29: 202972074
+      134-1340167_fire01-fire-game-effect-png_3: 1260546591
+      134-1340167_fire01-fire-game-effect-png_30: -1033505603
+      134-1340167_fire01-fire-game-effect-png_31: -1290502670
+      134-1340167_fire01-fire-game-effect-png_32: 918942758
+      134-1340167_fire01-fire-game-effect-png_33: 430302633
+      134-1340167_fire01-fire-game-effect-png_34: -1258553147
+      134-1340167_fire01-fire-game-effect-png_35: 245419806
+      134-1340167_fire01-fire-game-effect-png_36: -402493548
+      134-1340167_fire01-fire-game-effect-png_37: 284827006
+      134-1340167_fire01-fire-game-effect-png_38: -899145153
+      134-1340167_fire01-fire-game-effect-png_39: 1544356033
+      134-1340167_fire01-fire-game-effect-png_4: -355525164
+      134-1340167_fire01-fire-game-effect-png_40: 1661505612
+      134-1340167_fire01-fire-game-effect-png_41: 2020506132
+      134-1340167_fire01-fire-game-effect-png_42: 1826539094
+      134-1340167_fire01-fire-game-effect-png_43: 439683728
+      134-1340167_fire01-fire-game-effect-png_44: -145955832
+      134-1340167_fire01-fire-game-effect-png_45: 429900109
+      134-1340167_fire01-fire-game-effect-png_46: 1942924083
+      134-1340167_fire01-fire-game-effect-png_47: 640952530
+      134-1340167_fire01-fire-game-effect-png_5: 1563974931
+      134-1340167_fire01-fire-game-effect-png_6: -1528871482
+      134-1340167_fire01-fire-game-effect-png_7: 672462422
+      134-1340167_fire01-fire-game-effect-png_8: 1359318119
+      134-1340167_fire01-fire-game-effect-png_9: 1234131876
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
