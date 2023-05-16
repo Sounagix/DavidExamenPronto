@@ -144,7 +144,10 @@ public class Player : MonoBehaviour
     {
         int layer = (1 << 7);
         Debug.DrawRay(transform.position, -transform.up * 1.5f, Color.red, 1.0f);
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, -transform.up, 1.5f, layer);
+        Vector3 posicionInicialRayo = transform.position;
+        Vector3 direccion = -transform.up; // Vector.up(0,1)
+        float distance = 1.5f;
+        RaycastHit2D hit = Physics2D.Raycast(posicionInicialRayo, direccion, distance, layer);
         if (hit.collider != null && hit.collider.CompareTag("Plataforma"))
         {
             return true;
